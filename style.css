@@ -14,7 +14,6 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.4);
     padding: 40px;
     border-radius: 10px;
-    background-image: url('https://www.transparenttextures.com/patterns/old-map.png');
     background-color: rgba(44, 47, 51, 0.5); /* Adjusted to 50% transparency */
     border: 2px solid #ccc;
     width: 80%;
