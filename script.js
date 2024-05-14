@@ -23,8 +23,6 @@ function generateLegend() {
 function copyText() {
     const text = document.getElementById('legend').innerText;
     navigator.clipboard.writeText(text).then(() => {
-        console.log('Text copied to clipboard');
-        alert('Text copied to clipboard!');
     })
     .catch(err => {
         console.error('Failed to copy text: ', err);
