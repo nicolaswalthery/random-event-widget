@@ -10,7 +10,8 @@ const events = [
     "The party finds a map leading to a lost city.",
     "A friendly NPC asks for the party's help with a quest.",
     "A portal to another dimension opens before the party.",
-    "The party encounters a wandering merchant selling rare items."
+    "The party encounters a wandering merchant selling rare items.",
+    "A man is currently observing you from the bushes."
 ];
 
 function generateEvent() {
