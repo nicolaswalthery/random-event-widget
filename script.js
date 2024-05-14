@@ -1,11 +1,20 @@
-function updateClock() {
-    const clock = document.getElementById('clock');
-    const now = new Date();
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
-    clock.textContent = `${hours}:${minutes}:${seconds}`;
-}
+document.getElementById('generate-btn').addEventListener('click', generateEvent);
 
-setInterval(updateClock, 1000);
-updateClock();
+const events = [
+    "A sudden storm erupts, forcing the party to seek shelter.",
+    "A mysterious traveler offers the party a magical artifact.",
+    "The ground trembles as an earthquake shakes the area.",
+    "The party stumbles upon a hidden treasure chest.",
+    "A group of bandits ambushes the party.",
+    "An ancient dragon appears on the horizon.",
+    "The party finds a map leading to a lost city.",
+    "A friendly NPC asks for the party's help with a quest.",
+    "A portal to another dimension opens before the party.",
+    "The party encounters a wandering merchant selling rare items."
+];
+
+function generateEvent() {
+    const randomIndex = Math.floor(Math.random() * events.length);
+    const eventText = events[randomIndex];
+    document.getElementById('event-display').innerText = eventText;
+}
