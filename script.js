@@ -21,13 +21,9 @@ function generateLegend() {
 }
 
 function copyText() {
-    // Get the text element
-    const text = document.getElementById('textToCopy').innerText;
-
-    // Use the Clipboard API to write text to the clipboard
+    const text = document.getElementById('legend').innerText;
     navigator.clipboard.writeText(text).then(() => {
         console.log('Text copied to clipboard');
-        // Optionally, alert the user that the text was copied
         alert('Text copied to clipboard!');
     })
     .catch(err => {
