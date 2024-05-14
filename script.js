@@ -19,3 +19,19 @@ function generateLegend() {
     const legend = `A long time ago, ${age}, there was a ${character} who ${quest} ${location} ${encounter}.`;
     document.getElementById('legend').textContent = legend;
 }
+
+function copyText() {
+    // Get the text element
+    const text = document.getElementById('textToCopy').innerText;
+
+    // Use the Clipboard API to write text to the clipboard
+    navigator.clipboard.writeText(text).then(() => {
+        console.log('Text copied to clipboard');
+        // Optionally, alert the user that the text was copied
+        alert('Text copied to clipboard!');
+    })
+    .catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
+}
+
